@@ -1,17 +1,28 @@
-security:
-  oauth2:
-    client:
-      clientId: 67675453421-7h3mj2sd9o1kgrcikkinvm1aghbat1a5.apps.googleusercontent.com
-      clientSecret: tYPXOMH_M4wLpqP2Ophu4fm6
-      accessTokenUri: https://www.googleapis.com/oauth2/v4/token
-      userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
-      tokenName: oauth_token
-      authenticationScheme: query
-      clientAuthenticationScheme: form
-      scope:
-        - profile
-        - email
-        - openid
-    resource:
-      userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
-      preferTokenInfo: false
+google:
+  client:
+    clientId: 67675453421-7h3mj2sd9o1kgrcikkinvm1aghbat1a5.apps.googleusercontent.com
+    clientSecret: tYPXOMH_M4wLpqP2Ophu4fm6
+    accessTokenUri: https://www.googleapis.com/oauth2/v4/token
+    userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+    scope:
+      - profile
+      - email
+      - openid
+  resource:
+    userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
+    preferTokenInfo: false
+github:
+  client:
+    clientId: 379a8f681f307778dde5
+    clientSecret: 158380cf98deb69dfaca17d26a5ac4aee00be223
+    accessTokenUri: https://github.com/login/oauth/access_token
+    userAuthorizationUri: https://github.com/login/oauth/authorize
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://api.github.com/user
+    preferTokenInfo: false
